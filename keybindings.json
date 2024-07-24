@@ -249,6 +249,11 @@
     "when": "editorTextFocus && neovim.mode != 'insert'"
   },
   {
+    "key": "ctrl+j",
+    "command": "workbench.action.terminal.new",
+    "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+  },
+  {
     "key": "space j",
     "command": "workbench.action.openView",
     "when": "editorTextFocus && neovim.mode != 'insert'"
@@ -304,13 +309,18 @@
     "when": "editorTextFocus && neovim.mode != 'insert'"
   },
   {
-    "key": "space r s",
+    "key": "ctrl+s",
     "command": "workbench.action.debug.stop",
     "when": "inDebugMode && neovim.mode != 'insert'"
   },
   {
     "key": "space r t",
     "command": "testing.runCurrentFile",
+    "when": "editorTextFocus && neovim.mode != 'insert'"
+  },
+  {
+    "key": "space r n",
+    "command": "workbench.action.debug.run",
     "when": "editorTextFocus && neovim.mode != 'insert'"
   },
   {

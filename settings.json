@@ -65,5 +65,6 @@
     },
     "sqltools.useNodeRuntime": true,
     "workbench.activityBar.location": "bottom",
-    "workbench.statusBar.visible": false
+    "editor.renderWhitespace": "all",
+    "terminal.integrated.env.osx": {}
 }
