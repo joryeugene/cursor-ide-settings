@@ -170,7 +170,8 @@
   },
   {
     "key": "space c",
-    "command": "workbench.action.toggleCenteredLayout",
+    "command": "testing.clearTestResults",
+      // workbench.action.toggleCenteredLayout",
     "when": "editorTextFocus && neovim.mode != 'insert'"
   },
   {
@@ -228,9 +229,14 @@
     "command": "workbench.action.showAllSymbols",
     "when": "editorTextFocus && neovim.mode != 'insert'"
   },
+  // {
+  //   "key": "space h",
+  //   "command": "workbench.view.debug",
+  //   "when": "editorTextFocus && neovim.mode != 'insert'"
+  // },
   {
     "key": "space h",
-    "command": "workbench.view.debug",
+    "command": "workbench.action.closePanel",
     "when": "editorTextFocus && neovim.mode != 'insert'"
   },
   {
@@ -249,11 +255,6 @@
     "when": "editorTextFocus && neovim.mode != 'insert'"
   },
   {
-    "key": "ctrl+j",
-    "command": "workbench.action.terminal.new",
-    "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
-  },
-  {
     "key": "space j",
     "command": "workbench.action.openView",
     "when": "editorTextFocus && neovim.mode != 'insert'"
@@ -266,7 +267,7 @@
   {
     "key": "space l",
     "command": "editor.action.formatChanges",
-    "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && neovim.mode != 'insert'"
+    "when": "editorTextFocus && !editorReadonly && neovim.mode != 'insert'"
   },
   {
     "key": "space m",
@@ -299,9 +300,14 @@
     "when": "editorTextFocus && neovim.mode != 'insert'"
   },
   {
+    "key": "space r o",
+    "command": "workbench.panel.testResults.view.focus",
+    "when": "editorTextFocus && neovim.mode != 'insert'"
+  },
+  {
     "key": "space r c",
     "command": "python.configureTests",
-    "when": "inDebugMode && neovim.mode != 'insert'"
+    "when": "editorTextFocus && neovim.mode != 'insert'"
   },
   {
     "key": "space r d",
@@ -335,12 +341,18 @@
   },
   {
     "key": "space t",
-    "command": "workbench.action.files.newUntitledFile",
+    "command": "workbench.action.terminal.new",
+    // "command": "workbench.view.testing.focus",
+    // "command": "workbench.action.files.newUntitledFile",
     "when": "editorTextFocus && neovim.mode != 'insert'"
   },
   {
     "key": "space u",
-    "command": "workbench.action.toggleEditorVisibility",
+    // "command": "testing.toggleInlineTestOutput",
+    // "command": "workbench.action.toggleEditorVisibility",
+    // "command": "workbench.panel.markers.view.focus",
+    "command": "editor.closeTestPeek",
+    // "command": "workbench.panel.testResults.view.toggleVisibility",
     "when": "editorTextFocus && neovim.mode != 'insert'"
   },
   {
