@@ -132,8 +132,10 @@
   },
   {
     "key": "space .",
-    "command": "workbench.action.togglePanel",
-    "when": "editorTextFocus && neovim.mode != 'insert'"
+    // "command": "workbench.action.togglePanel",
+    // "when": "editorTextFocus && neovim.mode != 'insert'"
+    "command": "editor.action.revealDefinition",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor && neovim.mode != 'insert'"
   },
   {
     "key": "space '",
@@ -178,7 +180,7 @@
   },
   {
     "key": "space d",
-    "command": "workbench.view.extension.sqltoolsActivityBarContainer",
+    "command": "workbench.action.debug.start",
     "when": "editorFocus && neovim.mode != 'insert'"
   },
   {
@@ -313,7 +315,7 @@
   },
   {
     "key": "space r d",
-    "command": "workbench.action.debug.start",
+    "command": "testing.debugCurrentFile",
     "when": "editorTextFocus && neovim.mode != 'insert'"
   },
   {
