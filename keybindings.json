@@ -270,7 +270,8 @@
   },
   {
     "key": "space l",
-    "command": "editor.action.formatChanges",
+    // "command": "editor.action.formatChanges",
+    "command": "aichat.newchatbuttonaction",
     "when": "editorTextFocus && !editorReadonly && neovim.mode != 'insert'"
   },
   {
